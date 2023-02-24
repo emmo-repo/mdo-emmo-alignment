@@ -1,0 +1,54 @@
+@prefix : <http://emmo.info/emmo/alignment/mdo-emmo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mdo: <https://w3id.org/mdo/core/> .
+@base <http://emmo.info/emmo/alignment/mdo-emmo> .
+
+<http://emmo.info/emmo/alignment/mdo-emmo> rdf:type owl:Ontology ;
+	owl:versionIRI <http://emmo.info/emmo/alignment/mdo-emmo> ;
+	owl:imports <https://w3id.org/mdo/core> ,
+	            <http://emmo.info/emmo/1.0.0-beta4/domain/materials> ,
+				<http://emmo.info/emmo/1.0.0-beta4/domain/metrology> ,
+				<http://emmo.info/emmo/1.0.0-beta4/middle/data> ,
+				<http://emmo.info/emmo/1.0.0-beta4/middle/holistic> ,
+				<http://emmo.info/emmo/1.0.0-beta4/middle/perceptual> ,
+				<http://emmo.info/emmo/1.0.0-beta4/middle/persholistic> ,
+				<http://emmo.info/emmo/1.0.0-beta4/middle/persistence> ,
+				<http://emmo.info/emmo/1.0.0-beta4/middle/semiotics> ;
+	dcterms:abstract "MDO alignment with EMMO."@en ;
+	dcterms:bibliographicCitation "Work under review - not available yet" ;
+	dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
+	dcterms:created "2023-02-24" ;
+	dcterms:creator "Daniele Toti" ,
+	"Gerhard Goldbeck" ,
+	"Pierluigi Del Nostro" ;
+	dcterms:description "MDO alignment with EMMO"@en ;
+	dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+	dcterms:publisher "EMMC ASBL" ;
+	dcterms:title "MDO alignment with EMMO"@en ;
+	dcterms:modified "" ;
+	dcterms:source "" ;
+	dcterms:issued "" ;
+	<http://purl.org/vocab/vann/preferredNamespacePrefix> "mdo-emmo"@en ;
+	<http://purl.org/vocab/vann/preferredNamespaceUri> "http://emmo.info/emmo/alignment/mdo-emmo" ;
+	rdfs:comment """Contacts:
+	Gerhard Goldbeck
+	Goldbeck Consulting Ltd (UK)
+	email: gerhard@goldbeck-consulting.com"""@en ;
+	owl:backwardCompatibleWith "" ;
+	owl:priorVersion "" ;
+	foaf:logo "" ;
+	<http://purl.org/ontology/bibo/status> "" ;
+	<http://purl.org/ontology/bibo/doi> "" ;
+	owl:versionInfo "1.0.0-beta4" .
+	
+	
+	
+	
