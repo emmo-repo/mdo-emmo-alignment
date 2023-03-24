@@ -93,6 +93,6 @@ mdo-core:hasOutputCalculatedProperty rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_
 mdo-core:hasOutputStructure rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 .
 
 # relatesToMaterial and relatesToStructure are subproperties of EMMO's hasSign
-mdo-core:relatesToMaterial rdfs:subPropertyOf EMMO_60577dea_9019_4537_ac41_80b0fb563d41 .
+mdo-core:relatesToMaterial rdfs:subPropertyOf emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 .
 	
-mdo-core:relatesToStructure rdfs:subPropertyOf EMMO_60577dea_9019_4537_ac41_80b0fb563d41 .
+mdo-core:relatesToStructure rdfs:subPropertyOf emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 .
