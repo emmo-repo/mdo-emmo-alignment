@@ -9,11 +9,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix mdo-core: <https://w3id.org/mdo/core/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @base <http://emmo.info/emmo/alignment/mdo-emmo> .
 
 <http://emmo.info/emmo/alignment/mdo-emmo> rdf:type owl:Ontology ;
 	owl:versionIRI <http://emmo.info/emmo/alignment/mdo-emmo> ;
 	owl:imports <https://w3id.org/mdo/core> ,
+             	# <http://qudt.org/schema/qudt> ,
 	            <http://emmo.info/emmo/disciplines/materials> ,
 	            <http://emmo.info/emmo/disciplines/metrology> ,
 	            <http://emmo.info/emmo/disciplines/models> ,
@@ -61,8 +63,9 @@
 ### hasOutput                     -> multiperspective-persholistic EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840
 ### hasSign                       -> perspectives-semiotics        EMMO_60577dea_9019_4537_ac41_80b0fb563d41
 
-# Calculation is equivalent to EMMO's Computation
-mdo-core:Calculation owl:equivalentClass emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 .
+# Calculation is a subclass of EMMO's Computation
+# mdo-core:Calculation owl:equivalentClass emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 .
+mdo-core:Calculation rdfs:subClassOf emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 .
 
 # Material is equivalent to EMMO's Material
 mdo-core:Material owl:equivalentClass emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 .
@@ -70,14 +73,14 @@ mdo-core:Material owl:equivalentClass emmo:EMMO_4207e895_8b83_4318_996a_72cfb32a
 # Property is equivalent to EMMO's Property
 mdo-core:Property owl:equivalentClass emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba .
 
-# Unit is equivalent to EMMO's Measurement Unit
-mdo-core:Unit owl:equivalentClass emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 .
+# qudt:Unit is equivalent to EMMO's Measurement Unit
+qudt:Unit owl:equivalentClass emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 .
 
-# Quantity is equivalent to EMMO's Quantity
-mdo-core:Quantity owl:equivalentClass emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 .
+# qudt:Quantity is equivalent to EMMO's Quantity
+qudt:Quantity owl:equivalentClass emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 .
 
-# QuantityValue is a subclass of EMMO's Data
-mdo-core:Data rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 .
+# qudt:QuantityValue is a subclass of EMMO's Data
+qudt:QuantityValue rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 .
 
 # Structure is a subclass of EMMO's Information
 mdo-core:Structure rdfs:subClassOf emmo:EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc36 .
