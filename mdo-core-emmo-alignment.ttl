@@ -69,7 +69,6 @@
 ### hasSign                       -> perspectives-semiotics        EMMO_60577dea_9019_4537_ac41_80b0fb563d41
 
 # Calculation is a subclass of EMMO's Computation
-# mdo-core:Calculation owl:equivalentClass emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 .
 mdo-core:Calculation rdfs:subClassOf emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 .
 
 # Material is equivalent to EMMO's Material
@@ -81,8 +80,8 @@ mdo-core:Property rdfs:subClassOf emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba
 # qudt:Unit is equivalent to EMMO's Measurement Unit
 qudt:Unit owl:equivalentClass emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 .
 
-# qudt:Quantity is equivalent to EMMO's Quantity
-qudt:Quantity owl:equivalentClass emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 .
+# qudt:Quantity is equivalent to EMMO's Quantity (removed)
+# qudt:Quantity owl:equivalentClass emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 .
 
 # qudt:QuantityValue is a subclass of EMMO's Data
 qudt:QuantityValue rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 .
@@ -92,15 +91,12 @@ mdo-core:Structure rdfs:subClassOf emmo:EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc3
 
 # hasInputProperty and hasInputStructure are subproperties of EMMO's hasInput
 mdo-core:hasInputProperty rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 .
-
 mdo-core:hasInputStructure rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 .
 
 # hasOutputCalculatedProperty and hasOutputStructure are subproperties of EMMO's hasOutput
 mdo-core:hasOutputCalculatedProperty rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 .
-	
 mdo-core:hasOutputStructure rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 .
 
 # relatesToMaterial and relatesToStructure are subproperties of EMMO's hasSign
 mdo-core:relatesToMaterial rdfs:subPropertyOf emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 .
-	
 mdo-core:relatesToStructure rdfs:subPropertyOf emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 .
